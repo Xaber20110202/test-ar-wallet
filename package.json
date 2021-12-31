@@ -1,0 +1,67 @@
+{
+  "name": "everpay",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "serve-build": "serve -s dist",
+    "ui": "vue ui",
+    "everpay": "rm -rf ./src/libs/everpay-js && cp -r ../everpay-js/src ./src/libs/ && mv ./src/libs/src ./src/libs/everpay-js"
+  },
+  "dependencies": {
+    "arweave": "^1.10.15",
+    "axios": "^0.21.1",
+    "bignumber.js": "^9.0.1",
+    "keccak": "^3.0.1",
+    "lodash-es": "^4.17.21",
+    "mitt": "^2.1.0",
+    "uuid": "^8.3.2",
+    "vue": "^3.2.20"
+  },
+  "devDependencies": {
+    "@types/keccak": "^3.0.1",
+    "@types/lodash-es": "^4.17.4",
+    "@types/node": "^16.4.0",
+    "@types/uuid": "^8.3.1",
+    "@types/web3": "^1.2.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.3",
+    "@vue/cli": "4.5.13",
+    "@vue/cli-plugin-babel": "4.5.13",
+    "@vue/cli-plugin-eslint": "4.5.13",
+    "@vue/cli-plugin-router": "4.5.13",
+    "@vue/cli-plugin-typescript": "4.5.13",
+    "@vue/cli-plugin-vuex": "4.5.13",
+    "@vue/cli-service": "4.5.13",
+    "@vue/compiler-sfc": "^3.2.20",
+    "@vue/eslint-config-standard": "^6.1.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "autoprefixer": "^9",
+    "babel-loader": "^8.2.2",
+    "compression-webpack-plugin": "4.0.0",
+    "core-js": "3.10.1",
+    "eslint": "^7.24.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^7.14.0",
+    "lint-staged": "11.0.1",
+    "serve": "^12.0.0",
+    "typescript": "^4.3.5",
+    "webpack-encoding-plugin": "^0.3.1"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
