@@ -1,76 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,user-scalable=no" />
-    <meta name="google" content="notranslate" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@everpay" />
-    <meta name="twitter:title" content="NFT 拍卖" />
-    <meta name="twitter:description" content="收藏第一批everPay NFT, 与everPay未来建立联系" />
-    <meta name="twitter:image" content="https://dev.everpay.io/img/everpay.fc732039.png"/>
-    <link rel="icon" href="<%= BASE_URL %>favicon.png" />
-    <title>
-      <%= htmlWebpackPlugin.options.title %>
-    </title>
-    <meta
-      content="Real-time payment protocol for the blockchain"
-      name="descriptison"
-    />
-    <meta
-      content="everFinance,everPay,blockchain,defi,decentralized finance,ethereum,arweave"
-      name="keywords"
-    />
 
-    <!-- Google Tag Manager -->
-    <script>
-      if (window.location.host.startsWith("app.everpay.io")) {
-        (function(w, d, s, l, i) {
-          w[l] = w[l] || [];
-          w[l].push({
-            "gtm.start": new Date().getTime(),
-            event: "gtm.js",
-          });
-          var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != "dataLayer" ? "&l=" + l : "";
-          j.async = true;
-          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-          f.parentNode.insertBefore(j, f);
-        })(window, document, "script", "dataLayer", "GTM-MFMQSPR");
-      }
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="<%= BASE_URL %>favicon.png" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <meta content="Real-time payment protocol for the blockchain" name="descriptison" />
+  <meta content="everFinance,everPay,blockchain,defi,decentralized finance,ethereum,arweave" name="keywords" />
+</head>
 
-  <body class="h-full">
-    <noscript>
-      <strong
-        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+<body class="h-full">
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
         properly without JavaScript enabled. Please enable it to
-        continue.</strong
-      >
-    </noscript>
-    <div id="app" class="h-full flex flex-col"></div>
-    <!-- built files will be auto injected -->
+        continue.</strong>
+  </noscript>
+  <div id="app" class="h-full flex flex-col"></div>
+</body>
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-MFMQSPR"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Start of everpay Zendesk Widget script -->
-    <script
-      id="ze-snippet"
-      src="https://static.zdassets.com/ekr/snippet.js?key=69f594b7-a764-460a-925d-1134e741266c"
-    ></script>
-    <!-- End of everpay Zendesk Widget script -->
-  </body>
 </html>
